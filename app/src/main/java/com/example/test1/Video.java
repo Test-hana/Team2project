@@ -8,6 +8,7 @@ public class Video {   // DB에 있는 비디오 객
     private int UploadDate;
     /*
     edit test1
+    edit test 2
      */
 
 
