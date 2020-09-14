@@ -7,13 +7,10 @@
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="29" />
-
     <!-- 카메라 녹화를 위한 권한 -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-
-    <!-- 지도 검색을 위한 권한 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 지도 검색을 위한 권한 -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -55,6 +52,7 @@
         <activity android:name="com.example.test1.SearchActivity" />
         <activity android:name="com.example.test1.UploadActivity" />
         <activity android:name="com.example.test1.MainActivity" />
+        <activity android:name="com.example.test1.JoinActivity" />
 
         <meta-data
             android:name="com.google.android.gms.version"

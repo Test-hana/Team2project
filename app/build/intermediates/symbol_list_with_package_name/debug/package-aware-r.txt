@@ -1821,6 +1821,9 @@ id btn_go
 id btn_google
 id btn_guest
 id btn_holder
+id btn_join
+id btn_login
+id btn_logout
 id btn_record
 id btn_search
 id btn_upload
@@ -1944,6 +1947,7 @@ id line1
 id line3
 id linear
 id linearLayout
+id linearLayout3
 id listMode
 id list_item
 id list_profile
@@ -2133,7 +2137,11 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id trouble_signing_in
+id tv_email
 id tv_id
+id tv_nickname
+id tv_password
+id tv_passwordCheck
 id unchecked
 id uniform
 id unlabeled
@@ -2207,6 +2215,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_google_login
 layout activity_google_result
+layout activity_join
 layout activity_main
 layout activity_play
 layout activity_search

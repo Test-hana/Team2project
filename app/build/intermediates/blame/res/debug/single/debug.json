@@ -48,6 +48,10 @@
         "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\layout\\activity_play.xml"
     },
     {
+        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_join.xml.flat",
+        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\layout\\activity_join.xml"
+    },
+    {
         "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\layout\\activity_main.xml"
     },

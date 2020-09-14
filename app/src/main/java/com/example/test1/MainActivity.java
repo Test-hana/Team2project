@@ -68,19 +68,20 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private GoogleMap mMap;
     //private GoogleApiClient mGoogleApiClient; //사용중단됨
     private FusedLocationProviderClient mfusedLocationProviderClient; //위치정보 얻는 객체
-    public  static  final int REQUEST_CODE_PERMISSIONS = 1000; //권한체크 요청 코드 정의
+    public static final int REQUEST_CODE_PERMISSIONS = 1000; //권한체크 요청 코드 정의
 
     private Marker marker; //마커 삭제를 위한 마커객체 생성
     private FrameLayout frame; //정보창 프레임
     private EditText inputAddr; //입력받은 주소값
-    private Button btn_go; //검색버튼
+    private Button btn_go, btn_logout; //검색버튼
 
     final Geocoder geocoder = new Geocoder(this); //입력받은 주소 값 위도경도 값으로 변환해주는 거
     private double longitude; //경도
     private double latitude; //위도
-    private String str,str2;
+    private String str, str2;
 
-    private static final String TAG ="MainActivity";
+    private static final String TAG = "MainActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -133,7 +134,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         mfusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
         btn_go = (Button) findViewById(R.id.btn_go);
-        frame = (FrameLayout)findViewById(R.id.frame);
+        btn_logout = (Button) findViewById(R.id.btn_logout);
+        frame = (FrameLayout) findViewById(R.id.frame);
 
         btn_go.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -152,7 +154,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 if (list != null) {
                     if (list.size() == 0) {
                         //입력한 주소의 위도경도 값이 없다면
-                        Toast.makeText(MainActivity.this,"해당되는 주소 정보는 없습니다",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "해당되는 주소 정보는 없습니다", Toast.LENGTH_SHORT).show();
 
                     } else {
 
@@ -160,10 +162,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         longitude = address.getLongitude(); //경도
                         latitude = address.getLatitude(); //위도
                         LatLng latLng = new LatLng(latitude, longitude);
-                        str2 = address.getAddressLine(0)+"\n"; //상세주소
+                        str2 = address.getAddressLine(0) + "\n"; //상세주소
 
                         marker = mMap.addMarker(new MarkerOptions().position(latLng).title(str).snippet(str2));
-                        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,15));
+                        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 15));
 
 
                     }
@@ -227,7 +229,24 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
         });*/
 
-    }
+        btn_logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut(); //로그아웃 되면서 로그인 액티비티로 이동
+                Intent intent = new Intent(MainActivity.this, GoogleLoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        /*
+        //로그인 상태 체크
+        if (FirebaseAuth.getInstance().getCurrentUser() == null) {//로그인된 사용자가 없다면, 즉 비회원이라면
+
+        }*/
+
+
+
+    }//oncreate 마지막
 
     /*
     @Override
@@ -251,18 +270,17 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         MarkerOptions markerOptions = new MarkerOptions();
         markerOptions.position(Seoul).title("서울 남산공원").snippet("서울특별시 중구 용산2가동 삼일대로 231");
         marker = mMap.addMarker(markerOptions);
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Seoul,10));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Seoul, 10));
 
         str = marker.getTitle();
         str2 = "서울특별시 중구 용산2가동 삼일대로 231";
-
 
 
         //마커 클릭시 정보창 나옴
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
-                if(frame.getVisibility() == View.GONE) { //btn_info 버튼 한번 눌렀을때
+                if (frame.getVisibility() == View.GONE) { //btn_info 버튼 한번 눌렀을때
 
                     frame.setVisibility((View.VISIBLE));
                     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -273,14 +291,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     //fragment text 변경
                     Bundle bundle = new Bundle(); //번들 객체 생성
 
-                    bundle.putString("장소이름",str);
-                    bundle.putString("장소주소",str2);
+                    bundle.putString("장소이름", str);
+                    bundle.putString("장소주소", str2);
 
                     info_fragment.setArguments(bundle);//정보창 fragment로 전달
 
 
-                }
-                else{ //btn_info 버튼 두번 눌렀을때
+                } else { //btn_info 버튼 두번 눌렀을때
                     frame.setVisibility(View.GONE);
                 }
                 return true;
@@ -307,14 +324,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 */
 
 
-    public void mCurrentLocation(View v){
+    public void mCurrentLocation(View v) {
         //권한체크
-        if(ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED &&
                 ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
                         != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this,
-                    new String[] {Manifest.permission.ACCESS_FINE_LOCATION,
+                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
                             Manifest.permission.ACCESS_COARSE_LOCATION},
                     REQUEST_CODE_PERMISSIONS);
             return;
@@ -326,31 +343,30 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     @Override
                     public void onSuccess(Location location) {
                         marker.remove();
-                        if(location != null){
+                        if (location != null) {
                             //현재위치
                             latitude = location.getLatitude();
                             longitude = location.getLongitude();
 
-                            LatLng myLocation = new LatLng(latitude,longitude);
+                            LatLng myLocation = new LatLng(latitude, longitude);
                             marker = mMap.addMarker(new MarkerOptions().position(myLocation).title("현재 위치")
                                     .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
-                            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(myLocation,13));
+                            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(myLocation, 13));
 
                             List<Address> list = null;
                             try {
-                                list = geocoder.getFromLocation(latitude,longitude,10);
-                            } catch (IOException e){
+                                list = geocoder.getFromLocation(latitude, longitude, 10);
+                            } catch (IOException e) {
                                 e.printStackTrace();
                                 Log.e("test", "역지오코딩 에러발생");
                             }
 
-                            if(list != null){
-                                if(list.size()==0){
-                                    Toast.makeText(MainActivity.this,"해당되는 주소 정보는 없습니다",Toast.LENGTH_SHORT).show();
-                                }
-                                else {
+                            if (list != null) {
+                                if (list.size() == 0) {
+                                    Toast.makeText(MainActivity.this, "해당되는 주소 정보는 없습니다", Toast.LENGTH_SHORT).show();
+                                } else {
                                     str = marker.getTitle();
-                                    str2 = list.get(0).getAddressLine(0)+"\n";
+                                    str2 = list.get(0).getAddressLine(0) + "\n";
                                 }
                             }
                         }
@@ -364,16 +380,22 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
-        switch (requestCode){
-            case REQUEST_CODE_PERMISSIONS :
+        switch (requestCode) {
+            case REQUEST_CODE_PERMISSIONS:
                 if (ActivityCompat.checkSelfPermission(this,
                         Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
                         ActivityCompat.checkSelfPermission(this,
                                 Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                    Toast.makeText(this,"권한 체크 거부 됨",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "권한 체크 거부 됨", Toast.LENGTH_SHORT).show();
                 }
 
                 return;
         }
     }
+
+
+
 }
+
+
+
