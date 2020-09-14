@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw360dp-v13\\values-sw360dp-v13.xml",
+            "outputFile": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw360dp-v13/values-sw360dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\김하나\\.gradle\\caches\\transforms-2\\files-2.1\\e378bddd756ed8c76c4cbb7b6b33ccf2\\jetified-firebase-ui-auth-4.2.1\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
+                    "source": "/Users/choiwonseo/.gradle/caches/transforms-2/files-2.1/5fd12b867b080f2afbde349f7be50d77/jetified-firebase-ui-auth-4.2.1/res/values-sw360dp-v13/values-sw360dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",

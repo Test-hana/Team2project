@@ -1,102 +1,122 @@
 [
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_upload.xml.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\layout\\activity_upload.xml"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\drawable_play_action.jpg.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\drawable\\play_action.jpg"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_item.xml.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\layout\\list_item.xml"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/layout_activity_upload.xml.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/layout/activity_upload.xml"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/drawable_pause_action.jpg.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/drawable/pause_action.jpg"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search.xml.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\layout\\activity_search.xml"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_google_login.xml.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\layout\\activity_google_login.xml"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/layout_list_item.xml.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/layout/list_item.xml"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/drawable_round_tool.xml.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/drawable/round_tool.xml"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_play.xml.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\layout\\activity_play.xml"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/drawable_play_action.jpg.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/drawable/play_action.jpg"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/layout_activity_search.xml.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/layout/activity_search.xml"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\drawable_round_tool.xml.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\drawable\\round_tool.xml"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/drawable_ic_volume_up_grey_24dp.xml.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/drawable/ic_volume_up_grey_24dp.xml"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pause_action.jpg.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\drawable\\pause_action.jpg"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/drawable_ic_baseline_volume_off_24.xml.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/drawable/ic_baseline_volume_off_24.xml"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/layout_activity_google_login.xml.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/layout/activity_google_login.xml"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\layout_info_fragment.xml.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\layout\\info_fragment.xml"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/layout_layout_video_list_item.xml.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/layout/layout_video_list_item.xml"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/layout_activity_google_result.xml.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/layout/activity_google_result.xml"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/layout_info_fragment.xml.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/layout/info_fragment.xml"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_google_result.xml.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\layout\\activity_google_result.xml"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/drawable_ic_volume_off_grey_24dp.xml.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/drawable/ic_volume_off_grey_24dp.xml"
     },
     {
-        "merged": "C:\\Android_App\\Team2_wshn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Android_App\\Team2_wshn\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/drawable_white_background.png.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/drawable/white_background.png"
+    },
+    {
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/layout_activity_play.xml.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/layout/activity_play.xml"
+    },
+    {
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/layout/activity_main.xml"
     }
 ]
