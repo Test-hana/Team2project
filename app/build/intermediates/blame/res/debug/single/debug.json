@@ -100,6 +100,10 @@
         "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/layout_activity_join.xml.flat",
+        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/layout/activity_join.xml"
+    },
+    {
         "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/drawable_white_background.png.flat",
         "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/drawable/white_background.png"
     },
