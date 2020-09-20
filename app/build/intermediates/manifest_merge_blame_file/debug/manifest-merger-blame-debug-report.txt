@@ -53,7 +53,7 @@
 28-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/choiwonseo/.gradle/caches/transforms-2/files-2.1/58a41218ea342964128b5404cfbbd677/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:26:22-107
 29
 30    <application
-30-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:16:5-46:19
+30-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:16:5-48:19
 31        android:allowBackup="true"
 31-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:17:9-35
 32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -82,32 +82,32 @@
 46        <activity android:name="com.example.test1.GoogleResultActivity" />
 46-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:31:9-57
 46-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:31:19-55
-47        <activity android:name="com.example.test1.GoogleLoginActivity" >
-47-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:32:9-38:20
+47        <activity android:name="com.example.test1.GoogleLoginActivity" />
+47-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:32:9-56
 47-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:32:19-54
-48            <intent-filter>
-48-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:33:13-37:29
-49                <action android:name="android.intent.action.MAIN" />
-49-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:34:17-69
-49-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:34:25-66
-50
-51                <category android:name="android.intent.category.LAUNCHER" />
-51-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:36:17-77
-51-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:36:27-74
-52            </intent-filter>
-53        </activity>
-54        <activity android:name="com.example.test1.PlayActivity" />
-54-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:40:9-50
-54-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:40:19-47
+48        <activity android:name="com.example.test1.PlayActivity" >
+48-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:35:9-41:16
+48-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:35:19-47
+49            <intent-filter>
+49-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:36:9-40:25
+50                <action android:name="android.intent.action.MAIN" />
+50-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:37:13-65
+50-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:37:21-62
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:39:13-73
+52-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:39:23-70
+53            </intent-filter>
+54        </activity>
 55        <activity android:name="com.example.test1.SearchActivity" />
-55-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:41:9-52
-55-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:41:19-49
+55-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:42:9-52
+55-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:42:19-49
 56        <activity android:name="com.example.test1.UploadActivity" />
-56-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:42:9-52
-56-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:42:19-49
+56-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:43:9-52
+56-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:43:19-49
 57        <activity android:name="com.example.test1.MainActivity" />
-57-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:43:9-49
-57-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:43:19-47
+57-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:44:9-49
+57-->/Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:44:19-47
 58        <activity
 58-->[gun0912.ted:tedpermission:2.0.0] /Users/choiwonseo/.gradle/caches/transforms-2/files-2.1/b2671f2f7ba241915ca1e3ce2621639a/jetified-tedpermission-2.0.0/AndroidManifest.xml:10:9-12:67
 59            android:name="com.gun0912.tedpermission.TedPermissionActivity"

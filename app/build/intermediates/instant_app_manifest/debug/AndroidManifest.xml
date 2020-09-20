@@ -45,14 +45,14 @@
             android:value="AIzaSyAj9rimfetg7Vuse5vaTa9SDhpMli-VNkM" />
 
         <activity android:name="com.example.test1.GoogleResultActivity" />
-        <activity android:name="com.example.test1.GoogleLoginActivity" >
+        <activity android:name="com.example.test1.GoogleLoginActivity" />
+        <activity android:name="com.example.test1.PlayActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.test1.PlayActivity" />
         <activity android:name="com.example.test1.SearchActivity" />
         <activity android:name="com.example.test1.UploadActivity" />
         <activity android:name="com.example.test1.MainActivity" />

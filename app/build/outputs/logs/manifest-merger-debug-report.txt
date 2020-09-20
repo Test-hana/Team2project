@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:2:1-48:12
-INJECTED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:2:1-48:12
-INJECTED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:2:1-48:12
-INJECTED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:2:1-48:12
+ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:2:1-50:12
 MERGED from [gun0912.ted:tedpermission:2.0.0] /Users/choiwonseo/.gradle/caches/transforms-2/files-2.1/b2671f2f7ba241915ca1e3ce2621639a/jetified-tedpermission-2.0.0/AndroidManifest.xml:2:1-15:12
 MERGED from [com.google.android.libraries.places:places:2.3.0] /Users/choiwonseo/.gradle/caches/transforms-2/files-2.1/5c911ddb3644dd9711f84333580e2aaf/jetified-places-2.3.0/AndroidManifest.xml:2:1-23:12
 MERGED from [com.firebaseui:firebase-ui-auth:4.2.1] /Users/choiwonseo/.gradle/caches/transforms-2/files-2.1/5fd12b867b080f2afbde349f7be50d77/jetified-firebase-ui-auth-4.2.1/AndroidManifest.xml:2:1-93:12
@@ -89,20 +89,20 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/choiwonseo/.gradle
 MERGED from [androidx.print:print:1.0.0] /Users/choiwonseo/.gradle/caches/transforms-2/files-2.1/d5fd7fbc692311a845217063332ce16c/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.volley:volley:1.1.1] /Users/choiwonseo/.gradle/caches/transforms-2/files-2.1/bf6aa07c96679e2d3c0ed0cf5c7c28d6/jetified-volley-1.1.1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.datatransport:transport-api:2.1.0] /Users/choiwonseo/.gradle/caches/transforms-2/files-2.1/0fb4bddf7893b55c4a0b887ba4e80cd2/jetified-transport-api-2.1.0/AndroidManifest.xml:15:1-22:12
-INJECTED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:2:1-48:12
-INJECTED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:2:1-48:12
-INJECTED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:2:1-50:12
 	package
 		ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:3:5-32
 		INJECTED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml
-		ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:2:1-48:12
+		ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:2:1-50:12
 		INJECTED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml
-		ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:2:1-48:12
+		ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:2:1-50:12
 		INJECTED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:2:11-69
@@ -155,7 +155,7 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:2.1.0] /User
 	android:name
 		ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:13:22-64
 application
-ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:16:5-46:19
+ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:16:5-48:19
 MERGED from [gun0912.ted:tedpermission:2.0.0] /Users/choiwonseo/.gradle/caches/transforms-2/files-2.1/b2671f2f7ba241915ca1e3ce2621639a/jetified-tedpermission-2.0.0/AndroidManifest.xml:9:5-13:19
 MERGED from [gun0912.ted:tedpermission:2.0.0] /Users/choiwonseo/.gradle/caches/transforms-2/files-2.1/b2671f2f7ba241915ca1e3ce2621639a/jetified-tedpermission-2.0.0/AndroidManifest.xml:9:5-13:19
 MERGED from [com.google.android.libraries.places:places:2.3.0] /Users/choiwonseo/.gradle/caches/transforms-2/files-2.1/5c911ddb3644dd9711f84333580e2aaf/jetified-places-2.3.0/AndroidManifest.xml:13:5-21:19
@@ -257,35 +257,35 @@ ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml
 	android:name
 		ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:31:19-55
 activity#com.example.test1.GoogleLoginActivity
-ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:32:9-38:20
+ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:32:9-56
 	android:name
 		ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:32:19-54
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:33:13-37:29
-action#android.intent.action.MAIN
-ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:34:17-69
-	android:name
-		ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:34:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:36:17-77
-	android:name
-		ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:36:27-74
 activity#com.example.test1.PlayActivity
-ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:40:9-50
+ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:35:9-41:16
 	android:name
-		ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:40:19-47
+		ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:35:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:36:9-40:25
+action#android.intent.action.MAIN
+ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:37:13-65
+	android:name
+		ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:37:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:39:13-73
+	android:name
+		ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:39:23-70
 activity#com.example.test1.SearchActivity
-ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:41:9-52
-	android:name
-		ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:41:19-49
-activity#com.example.test1.UploadActivity
 ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:42:9-52
 	android:name
 		ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:42:19-49
-activity#com.example.test1.MainActivity
-ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:43:9-49
+activity#com.example.test1.UploadActivity
+ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:43:9-52
 	android:name
-		ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:43:19-47
+		ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:43:19-49
+activity#com.example.test1.MainActivity
+ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:44:9-49
+	android:name
+		ADDED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml:44:19-47
 uses-sdk
 INJECTED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/choiwonseo/team2/Team2project/app/src/main/AndroidManifest.xml
