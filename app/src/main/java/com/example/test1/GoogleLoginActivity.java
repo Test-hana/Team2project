@@ -3,11 +3,11 @@ package com.example.test1;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
-import android.app.Activity;
+
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,6 +27,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.auth.UserInfo;
 
 public class GoogleLoginActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
 
@@ -35,7 +36,7 @@ public class GoogleLoginActivity extends AppCompatActivity implements GoogleApiC
     private GoogleApiClient googleApiClient;//구글 API 클라이언트
     private static final int REQ_SIGN_GOOGLE = 100;//구글 로그인 결과 검토, 100 임의의 값
 
-    private Button btn_guest,btn_join,btn_login;
+    private Button btn_guest,btn_join,btn_login,btn_passwordReset;
     private EditText tv_email, tv_password;
 
     @Override
@@ -58,6 +59,7 @@ public class GoogleLoginActivity extends AppCompatActivity implements GoogleApiC
         tv_email = (EditText)findViewById(R.id.tv_email);
         tv_password = (EditText)findViewById(R.id.tv_password);
 
+        //구글로그인 사용자
         btn_google = findViewById(R.id.btn_google);
         btn_google.setOnClickListener(new View.OnClickListener() {//구글 로그인 버튼을 클릭했을때 이곳을 수행
             @Override
@@ -67,17 +69,18 @@ public class GoogleLoginActivity extends AppCompatActivity implements GoogleApiC
             }
         });
 
+        //비회원 사용자
         btn_guest = findViewById(R.id.btn_guest);
         btn_guest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(GoogleLoginActivity.this,MainActivity.class);
                 startActivity(intent);
-                //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //뒤로가기했을 때 앱이 꺼지기 위해서
                 startToast("비회원입니다.");
             }
         });
 
+        //회원가입
         btn_join = findViewById(R.id.btn_join);
         btn_join.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,6 +90,7 @@ public class GoogleLoginActivity extends AppCompatActivity implements GoogleApiC
             }
         });
 
+        //로그인
         btn_login = findViewById(R.id.btn_login);
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,6 +98,30 @@ public class GoogleLoginActivity extends AppCompatActivity implements GoogleApiC
                 Login();
             }
         });
+
+        //비밀번호 재설정
+        btn_passwordReset =findViewById(R.id.btn_passwordReset);
+        btn_passwordReset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(GoogleLoginActivity.this,PasswordResetActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        //로그인된 사용자가 null이 아니라면 바로 메인으로 이동(자동로그인)
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            Intent intent = new Intent(GoogleLoginActivity.this,MainActivity.class);
+            startActivity(intent);
+            for (UserInfo profile : user.getProviderData()) {
+                String email = profile.getEmail();
+                Toast.makeText(GoogleLoginActivity.this, email+"로 로그인되었습니다.", Toast.LENGTH_LONG).show();
+            }
+        }
+
+
 
 
 
@@ -122,16 +150,18 @@ public class GoogleLoginActivity extends AppCompatActivity implements GoogleApiC
                         if(task.isSuccessful()){//로그인이 성공했으면
                             startToast("로그인에 성공하였습니다.");
 
-                            Intent intent = new Intent(getApplicationContext(), GoogleResultActivity.class); //GoogleResultActivity로 전달
+
+                            Intent intent = new Intent(getApplicationContext(), MainActivity.class); //MainActivity로 전달
                             intent.putExtra("nickname",account.getDisplayName());
                             intent.putExtra("photourl",String.valueOf(account.getPhotoUrl()));//String.valueof() 특정 자료형을 string형으로 변환할때
 
+                            /*
                             Intent intent2 = new Intent(getApplicationContext(), MainActivity.class); //DB에 userid, profileUrl 저장하기위해 MainActivity로 닉네임 값 전달
                             intent2.putExtra("nickname",account.getDisplayName());
                             intent2.putExtra("photourl",String.valueOf(account.getPhotoUrl()));
-
-                            //startActivity(intent); //로그인성공 후 프로필이랑 닉네임 보여주는 거 필요없을 거 같아서 보류, 주석처리
-                            startActivity(intent2);
+                             */
+                            startActivity(intent);
+                            //startActivity(intent2);
 
                         }
                         else{//로그인이 실패했으면
@@ -147,28 +177,9 @@ public class GoogleLoginActivity extends AppCompatActivity implements GoogleApiC
     }
 
     @Override
-    public void onStart() {
-        super.onStart();
-        //활동을 초기화할 때 사용자가 현재 로그인되어 있는지 확인함함
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-
-        //로그인 상태 체크-보류
-        /*
-        if (FirebaseAuth.getInstance().getCurrentUser() != null) {//로그인된 사용자가 null이 아니라면 바로 메인으로 이동(자동로그인)
-            Intent intent = new Intent(GoogleLoginActivity.this, MainActivity.class);
-            startActivity(intent);
-            startToast(mAuth.getUid()+"로 로그인되었습니다.");
-        }
-
-         */
-
-    }
-
-    @Override
     public void onBackPressed() { //뒤로가기 버튼 클릭시, 앱 종료
         super.onBackPressed();
-        android.os.Process.killProcess(android.os.Process.myPid());
-        System.exit(1);
+        ActivityCompat.finishAffinity(this);
     }
 
     private void Login(){ //자체 로그인 함수
@@ -183,14 +194,12 @@ public class GoogleLoginActivity extends AppCompatActivity implements GoogleApiC
                             if (task.isSuccessful()) {
                                 //성공 시
                                 FirebaseUser user = mAuth.getCurrentUser();
-                                startToast("로그인에 성공하였습니다.");
+                                startToast("로그인에 성공하였습니다. 회원정보를 입력해주세요.");
 
-                                Intent intent = new Intent(GoogleLoginActivity.this,MainActivity.class);
-                                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //뒤로가기했을 때 앱이 꺼지기 위해서
+                                Intent intent = new Intent(GoogleLoginActivity.this,MemberInfoActivity.class);
                                 startActivity(intent);
                             } else {
                                 //실패 시
-                                //실패했을때
                                 if(task.getException()!=null){
                                     startToast(task.getException().toString()+"\n로그인에 실패하였습니다.)");
                                 }

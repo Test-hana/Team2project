@@ -2,14 +2,13 @@ package com.example.test1;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -20,10 +19,10 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class JoinActivity extends AppCompatActivity {
 
-    private EditText tv_email, tv_password, tv_passwordCheck, tv_nickname;
+    private EditText tv_email, tv_password, tv_passwordCheck;
     private Button btn_join, btn_login;
     private FirebaseAuth mAuth; //FirebaseAuth 인스턴스 선언
-    private static final String TAG = "JoinActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,9 +34,9 @@ public class JoinActivity extends AppCompatActivity {
         tv_email = (EditText)findViewById(R.id.tv_email);
         tv_password = (EditText)findViewById(R.id.tv_password);
         tv_passwordCheck = (EditText)findViewById(R.id.tv_passwordCheck);
-        //tv_nickname = (EditText)findViewById(R.id.tv_nickname); //아직 미사용, DB에 id 업로드할때, email에서 id 추출이 안되면 사용하기로 보류.
+
         btn_join = (Button)findViewById(R.id.btn_join);
-        btn_login = (Button)findViewById(R.id.btn_login);
+        btn_login = (Button)findViewById(R.id.btn_login); //이것도 굳이 필요는 없는데 로그인화면으로 넘어가는걸 위해서 보류
 
         btn_join.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +51,7 @@ public class JoinActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(JoinActivity.this,GoogleLoginActivity.class);
                 startActivity(intent);
+
             }
         });
 
@@ -59,12 +59,10 @@ public class JoinActivity extends AppCompatActivity {
 
 
     }//onCreate 마지막
-
     @Override
     public void onBackPressed() { //뒤로가기 버튼 클릭시, 앱 종료
         super.onBackPressed();
-        android.os.Process.killProcess(android.os.Process.myPid());
-        System.exit(1);
+        ActivityCompat.finishAffinity(this);
     }
 
     private void Join(){ //회원가입 함수
@@ -79,12 +77,14 @@ public class JoinActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
-                                    //성공했을때
+                                    //성공 시
                                     FirebaseUser user = mAuth.getCurrentUser();
+                                    Intent intent = new Intent(JoinActivity.this,MainActivity.class);
+                                    startActivity(intent);
                                     startToast("회원가입에 성공하였습니다.");
 
                                 } else {
-                                    //실패했을때
+                                    //실패 시
                                     if(task.getException()!=null){
                                         startToast(task.getException().toString()+"\n회원가입에 실패하였습니다. (비밀번호는 6자리 이상을 입력주세요.)");
                                     }
@@ -103,5 +103,8 @@ public class JoinActivity extends AppCompatActivity {
     private void startToast(String msg){ //리스너에서 Toast msg가 불가해서
        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
+
+
+
 
 }
