@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "/Users/choiwonseo/.gradle/caches/transforms-2/files-2.1/5fd12b867b080f2afbde349f7be50d77/jetified-firebase-ui-auth-4.2.1/res/values-v26/values-v26.xml",
+                    "source": "/Users/choiwonseo/.gradle/caches/transforms-2/files-2.1/e0ff0c53455df6aa7f7287a017eea44b/jetified-firebase-ui-auth-6.1.0/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,6,10,14",
                         "startColumns": "4,4,4,4",

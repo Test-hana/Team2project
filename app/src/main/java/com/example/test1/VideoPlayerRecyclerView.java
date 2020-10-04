@@ -107,7 +107,7 @@ public class VideoPlayerRecyclerView extends RecyclerView {
 
         addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
-            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+            public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
 
                 if (newState == RecyclerView.SCROLL_STATE_IDLE) {
@@ -128,19 +128,19 @@ public class VideoPlayerRecyclerView extends RecyclerView {
             }
 
             @Override
-            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+            public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
             }
         });
 
         addOnChildAttachStateChangeListener(new OnChildAttachStateChangeListener() {
             @Override
-            public void onChildViewAttachedToWindow(View view) {
+            public void onChildViewAttachedToWindow(@NonNull View view) {
 
             }
 
             @Override
-            public void onChildViewDetachedFromWindow(View view) {
+            public void onChildViewDetachedFromWindow(@NonNull View view) {
                 if (viewHolderParent != null && viewHolderParent.equals(view)) {
                     resetVideoView();
                 }

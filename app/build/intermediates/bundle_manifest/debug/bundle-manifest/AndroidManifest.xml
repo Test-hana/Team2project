@@ -112,6 +112,22 @@
             android:label="@string/fui_title_welcome_back_password_prompt"
             android:windowSoftInputMode="adjustResize" />
         <activity
+            android:name="com.firebase.ui.auth.ui.email.WelcomeBackEmailLinkPrompt"
+            android:exported="false"
+            android:label="@string/fui_title_welcome_back_password_prompt"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.firebase.ui.auth.ui.email.EmailLinkCatcherActivity"
+            android:exported="false"
+            android:label=""
+            android:theme="@style/FirebaseUI.Transparent"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.firebase.ui.auth.ui.email.EmailLinkErrorRecoveryActivity"
+            android:exported="false"
+            android:label="@string/fui_sign_in_default"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
             android:name="com.firebase.ui.auth.ui.idp.AuthMethodPickerActivity"
             android:exported="false"
             android:label="@string/fui_default_toolbar_title" />

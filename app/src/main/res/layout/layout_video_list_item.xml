@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -7,7 +7,8 @@
     android:orientation="vertical"
     android:weightSum="100"
     android:id="@+id/parent"
-    android:background="#fff">
+    android:background="#fff"
+    >
 
     <TextView
         android:id="@+id/title"
@@ -66,4 +67,4 @@
             android:layout_gravity="center" />
     </FrameLayout>
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

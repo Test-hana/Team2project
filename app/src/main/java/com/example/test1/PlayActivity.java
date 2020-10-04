@@ -3,6 +3,7 @@ package com.example.test1;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -54,12 +55,10 @@ public class PlayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
-
         mRecyclerView = findViewById(R.id.recycler_view);
+
         initRecyclerView();
-
     }
-
 
     private void initRecyclerView(){
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);

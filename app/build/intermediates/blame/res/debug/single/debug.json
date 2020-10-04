@@ -36,20 +36,12 @@
         "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/layout_list_item.xml.flat",
-        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/layout/list_item.xml"
-    },
-    {
         "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/drawable_round_tool.xml.flat",
         "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/drawable/round_tool.xml"
     },
     {
         "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/drawable_play_action.jpg.flat",
         "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/drawable/play_action.jpg"
-    },
-    {
-        "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/layout_activity_search.xml.flat",
-        "source": "/Users/choiwonseo/team2/Team2project/app/src/main/res/layout/activity_search.xml"
     },
     {
         "merged": "/Users/choiwonseo/team2/Team2project/app/build/intermediates/res/merged/debug/drawable_ic_volume_up_grey_24dp.xml.flat",
